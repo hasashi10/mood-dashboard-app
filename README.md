@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="./public/emoti.png" alt="React State Management with Context" width="600">
+</p>
 # Mood Emoji Dashboard (Lite Edition)
 
 ---
@@ -42,7 +45,7 @@ mood-dashboard/
 ```bash
 # git‑clone the fork of the starter
 cd mood-dashboard-app
-npm install      
+npm install
 npm run dev
 # open http://localhost:5173
 ```
