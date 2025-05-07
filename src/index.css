@@ -1,0 +1,29 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-family: system-ui, sans-serif;
+}
+
+.mood-btn {
+  font-size: 3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mood-btn:active {
+  transform: scale(1.2);
+  transition: transform .1s;
+}
+
+.stats ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fact {
+  margin-top: 1rem;
+  font-style: italic;
+}
