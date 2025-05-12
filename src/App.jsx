@@ -22,6 +22,18 @@ function App() {
   function handleVote(mood) {
     setCounts(prev => ({ ...prev, [mood]: prev[mood] + 1 }));
   }
+  function clearVote() {
+    setCounts(() => {
+      return {
+        happy: 0,
+        tired: 0,
+        excited: 0,
+        meh: 0,
+
+  };
+    })
+
+  }
 
   return (
     <div className="dashboard">
@@ -41,6 +53,10 @@ function App() {
 
       {/* 4️⃣  Pass the **real variable** `counts` to MoodStats */}
       <MoodStats counts={counts} />
+      <button classname='mood-btn' onlick ={clearVote}>
+            reset
+           
+            </button>
     </div>
   );
 }
